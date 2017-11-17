@@ -71,7 +71,7 @@ public class MainActivity extends Activity implements Fragment1.OnFragmentIntera
 
     public int enviarDato(){
 
-        Fragment2 f2 = (Fragment2)getFragmentManager().findFragmentById(R.id.action_settings);
+        Fragment2 f2 = (Fragment2)getFragmentManager().findFragmentById(R.id.canto_superior_dret);
         int num=f2.getContador();
         return num;
     }
