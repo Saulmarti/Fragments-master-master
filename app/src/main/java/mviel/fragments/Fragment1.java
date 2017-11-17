@@ -38,10 +38,11 @@ public class Fragment1 extends Fragment {
         layoutF1.setOnLongClickListener(new View.OnLongClickListener() {
             @Override
             public boolean onLongClick(View v) {
-                fm = getFragmentManager();
-                ft= fm.beginTransaction();
+
                 fm.popBackStack();
                 fm.popBackStack();
+
+                Toast.makeText(getContext(),"Eliminant Fragment2 y Fragment3",Toast.LENGTH_SHORT).show();
 
                 return false;
             }
